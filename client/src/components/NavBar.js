@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
 MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Wikipedia } from './Wikipedia';
+import Wikipedia from './Wikipedia';
 
 
 class Navbar extends Component {

@@ -4,7 +4,8 @@ import './App.css';
 import Button from './components/Button';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-// import Wikipedia from './components/Wikipedia';
+import Categories from './components/Categories';
+import Wikipedia from './components/Wikipedia';
 // import Books from './components/Books';
 // import Contact from './components/Contact'
 // import QuoteMachine from './components/QuoteMachine';
@@ -49,6 +50,10 @@ assignNewQuoteIndex() {
   this.setState({ selectedQuoteIndex: this.generateNewQuoteIndex() });
 }
 
+viewAllQuotes() {
+  this.setState({ });
+}
+
   render() {
     return (
       <div className="App">
@@ -64,11 +69,11 @@ assignNewQuoteIndex() {
           <div className="randombutton">
               <Button buttonDisplayName="Next Quote" clickHandler={this.assignNewQuoteIndex}/>
             </div>
+          <div className="categories">
+            <Categories />
+          </div>
           {/* <div className="wikipedia">
             <Wikipedia />
-          </div> */}
-          {/* <div className="Books">
-            <Books />
           </div> */}
           <div className="footer">
               <Footer />

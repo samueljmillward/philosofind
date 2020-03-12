@@ -8,13 +8,28 @@
     background-size: cover;
     font-family: Roboto,sans-serif;
     position: relative;
-    min-height: 100vh;
-    padding-bottom: 2.5rem;
+    min-height: 180vh;
+    padding-bottom: 0px;
 }
 
-.Header {
-  color: yellow;
+.headers {
+  font-weight: bold;
+  padding-top: 10px;
 }
+
+.categories {
+  position: relative;
+  padding: 0rem;
+  border: 2px solid #fff;
+  color: black;
+  text-align: center;
+}
+
+/* .wikipedia {
+  position: relative;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+} */
 
 .footer {
   position: absolute;
@@ -23,7 +38,7 @@
   height: 0rem;
 }
 
-.Wikipedia {
+/* .Wikipedia {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -36,7 +51,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-}
+} */
 
 
 
