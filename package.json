@@ -20,6 +20,8 @@
     "mdbreact": "^4.25.3",
     "nodemailer": "^6.4.4",
     "nodemon": "^2.0.2",
+    "react-background-slideshow": "^1.0.4",
+    "react-slideshow-image": "^1.4.0",
     "styled-components": "^5.0.1"
   }
 }

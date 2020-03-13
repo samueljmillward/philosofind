@@ -1,4 +1,5 @@
 import React from 'react';
+import Wiki from '../Wiki.png';
 
 class Wikipedia extends React.Component {
   constructor(props) {
@@ -102,12 +103,12 @@ class Wikipedia extends React.Component {
 
     return (
       <div className="Wikipedia">
-        <h1>Wikipedia Search Engine</h1>
-        <form action="">
-          <input type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' />
-          <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
-        </form>
-        {wikiSearchResults}
+            <form action="" className="wikisearch">
+              <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="25" />
+              <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
+            </form>
+          {wikiSearchResults}
+        <img src={Wiki} height="250px" width="200px" ></img>
       </div>
     );
   }
