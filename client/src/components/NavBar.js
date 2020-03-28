@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBFormInline } from "mdbreact";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
+import Logo from '../images/logo.png';
+import '../styles/NavBar.css';
 
 class Navbar extends Component {
 state = {
@@ -14,43 +16,38 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="grey" dark expand="md">
+      <MDBNavbar 
+        color="white"
+        dark
+        expand="md"
+        fixed="top"
+        scrolling
+        light
+        >
         <MDBNavbarBrand>
-          <strong className="white-text">Philosofind</strong>
+        <a className="logo" href="/">
+        <img src={Logo} alt="ancient-philosopher" height="60px" width="70px" />
+        </a>
         </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
+        <MDBNavbarToggler className="black" onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
-            <MDBNavItem active>
-              {/* <MDBNavLink to="#!">Home</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Features</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Pricing</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Dropdown</span>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown> */}
-            </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem>
-              <MDBFormInline waves>
-                <div className="md-form my-0">
-                  <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-                </div>
-              </MDBFormInline>
+          <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret className="black-text">
+                  <span className="mr-2">Categories</span>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem href="/ancient">Ancient</MDBDropdownItem>
+                  <MDBDropdownItem href="/enlightenment">Enlightenment</MDBDropdownItem>
+                  <MDBDropdownItem href="/modern">Modern</MDBDropdownItem>
+                  <MDBDropdownItem href="/artists">Artists</MDBDropdownItem>
+                  <MDBDropdownItem href="/entrepreneurs">Entrepreneurs</MDBDropdownItem>
+                  <MDBDropdownItem href="/scientists">Scientists</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>

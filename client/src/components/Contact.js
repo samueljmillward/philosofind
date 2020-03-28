@@ -31,7 +31,6 @@ class Contact extends Component {
       message
     })
   }
-  
 
   render() {
     return (

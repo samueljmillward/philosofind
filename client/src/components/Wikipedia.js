@@ -1,5 +1,5 @@
 import React from 'react';
-import Wiki from '../Wiki.png';
+import Wiki from '../images/Wiki.png';
 
 class Wikipedia extends React.Component {
   constructor(props) {
@@ -99,8 +99,6 @@ class Wikipedia extends React.Component {
       );
     }
 
-    console.log(wikiSearchResults);
-
     return (
       <div className="Wikipedia">
             <form action="" className="wikisearch">
@@ -108,7 +106,7 @@ class Wikipedia extends React.Component {
               <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
             </form>
           {wikiSearchResults}
-        <img src={Wiki} height="250px" width="200px" ></img>
+        <img src={Wiki} alt="wikipedia-logo" height="250px" width="200px" ></img>
       </div>
     );
   }
