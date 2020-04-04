@@ -1,3 +1,11 @@
+.navbar {
+  max-height: 80px;
+  display:flex;
+}
+
+.logo {
+  margin-top: 0;
+}
 
 .headers {
   font-weight: bold;
@@ -19,10 +27,10 @@
 }
 
 .random-quote {
-  margin-top: 450px;
   color: #fff;
-  font-size: x-large;
-  position: absolute;
+  font-size: xx-large;
+  font-weight: bolder;
+  position: relative;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -33,7 +41,7 @@
   margin-top: 650px;
   color: #fff;
   font-size: medium;
-  position: relative;
+  position: absolute;
   justify-content: center;
   align-items: center;
   display: flex;

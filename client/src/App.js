@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://gist.githubusercontent.com/jimmyb2508/b0601acd348790a3ac06aedf36e41885/raw/e3d5ba71374b10f72dd93ca752f6f0ce8368722d/quotes.json')
+    fetch('https://gist.githubusercontent.com/jimmyb2508/b0601acd348790a3ac06aedf36e41885/raw/aefb43f92c9bd401990d34584ce80ebbf58c9f58/quotes.json')
       .then(data => data.json())
       .then(quotes => this.setState({ quotes }, this.assignNewQuoteIndex));
   }
