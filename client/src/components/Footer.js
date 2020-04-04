@@ -12,11 +12,9 @@ const FooterPage = () => {
           <MDBCol md="4">
             <h5 className="title">About Us</h5>
             <p>
-              The Philosofind team are all graduates of the 
-              Manchester Codes software engineering bootcamp.
-            </p>
-            <p>It was created by Sam Millward, Sean Campbell
-            & James Barrington as the final project for the course.
+              Philosofind was created by Sam Millward, Sean Campbell
+              & James Barrington. They are all graduates of the Manchester
+              Codes.
             </p>
             <p>Manchester Codes is the UK’s original part-time coding school.</p>
             <p>Started in 2017 the course trains people with little to no prior coding experience  over an intensive 24 week course, covering all of the fundamentals required for to become a Software Developer.

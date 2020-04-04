@@ -29,7 +29,7 @@ render() {
         <img src={Logo} alt="ancient-philosopher" height="60px" width="70px" />
         </a>
         </MDBNavbarBrand>
-        <MDBNavbarToggler className="black" onClick={this.toggleCollapse} />
+        {/* <MDBNavbarToggler className="black" onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
           </MDBNavbarNav>
@@ -50,7 +50,7 @@ render() {
               </MDBDropdown>
             </MDBNavItem>
           </MDBNavbarNav>
-        </MDBCollapse>
+        </MDBCollapse> */}
       </MDBNavbar>
     </Router>
     );
