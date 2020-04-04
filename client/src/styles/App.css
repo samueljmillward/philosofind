@@ -14,24 +14,40 @@
   min-height: 100vh;
 }
 
+.Main {
+  margin-top: 100px;
+}
+
 .random-quote {
-  margin-top: 200px;
+  margin-top: 400px;
   color: #fff;
   font-size: x-large;
   position: fixed;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   max-width: 80%;
 }
 
-.quote-btn {
+.random-button {
+  margin-top: 650px;
+  color: #fff;
+  font-size: x-large;
+  position: fixed;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+/* .quote-btn {
   margin-top: 600px;
   height: 30px;
   width: 170px;
   position: fixed;
   font-size: small;
   justify-content: center;
-}
+} */
 
 .categories {
   position: relative;

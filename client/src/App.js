@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { random } from 'lodash';
+import { MDBBox } from 'mdbreact';
 import './styles/App.css';
 // import Random from './components/Random';
 import RandomQuote from './components/RandomQuote'
@@ -14,28 +16,71 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Categories from './components/Categories';
 import Wikipedia from './components/Wikipedia';
+import Button from './components/Button';
+import Background from './images/ancient8.jpg';
 // import Philosofind from './components/Philosofind';
 import Axios from 'axios';
-
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      quote:"",
-      author:"",
-      quotes:[],
+      quotes: [],
+      selectedQuoteIndex: null,
     }
+    this.assignNewQuoteIndex = this.assignNewQuoteIndex.bind(this);
+    this.selectQuoteIndex = this.generateNewQuoteIndex.bind(this);
   }
 
-  randomQuote = (event) => {
-		event.preventDefault();
-    Axios.get(`http://quotes.stormconsultancy.co.uk/random.json`)
-      .then(quote =>
-        this.setState({ quote: quote.data.quote })
-      )
-      .catch(err => console.log(err))
+  componentDidMount() {
+    fetch('https://gist.githubusercontent.com/jimmyb2508/b0601acd348790a3ac06aedf36e41885/raw/e3d5ba71374b10f72dd93ca752f6f0ce8368722d/quotes.json')
+      .then(data => data.json())
+      .then(quotes => this.setState({ quotes }, this.assignNewQuoteIndex));
   }
+
+  get selectedQuote() {
+    if (!this.state.quotes.length || !Number.isInteger(this.state.selectedQuoteIndex)) {
+      return undefined;
+    }
+    return this.state.quotes[this.state.selectedQuoteIndex];
+  }
+
+  /* Returns an integer representing an index in state.quotes*/
+  /* If state.quotes is empty then it returns undefined */
+
+  generateNewQuoteIndex() {
+    if (!this.state.quotes.length) {
+      return undefined;
+    }
+    return random(0, this.state.quotes.length -1);
+  }
+
+assignNewQuoteIndex() {
+  this.setState({ selectedQuoteIndex: this.generateNewQuoteIndex() });
+}
+
+viewAllQuotes() {
+  this.setState({ });
+}
+
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       quote:"",
+//       author:"",
+//       quotes:[],
+//     }
+//   }
+
+  // randomQuote = (event) => {
+	// 	event.preventDefault();
+  //   Axios.get(`https://murmuring-depths-99830.herokuapp.com/quotes/random`)
+  //     .then(quote =>
+  //       this.setState({ quote: quote.data.quote })
+  //     )
+  //     .catch(err => console.log(err))
+  // }
   
   // manyQuotes = event => {
 	// 	event.preventDefault();
@@ -101,9 +146,25 @@ class App extends Component {
           </div>
           <div className="Body">
           <div className="Quotes">
-          <BrowserRouter>
-          <Switch>
-            <Route
+          <React.Fragment>
+            <MDBBox>
+              <div
+                className="randomcontainer"
+                style={{ backgroundImage: `url(${Background})`}}>
+                <div className="random-quote">
+                    {this.selectedQuote ? `"${this.selectedQuote.quote}" - ${this.selectedQuote.author}` : 'Quote Not Shown!' }
+                    
+                    {/* <QuoteMachine selectedQuote={this.selectedQuote} assignNewQuoteIndex={this.assignNewQuoteIndex} /> */}
+                </div>
+                <div className="random-button">
+                  <Button buttonDisplayName="Next Quote" clickHandler={this.assignNewQuoteIndex}/>
+                </div>
+              </div>
+            </MDBBox>
+      </React.Fragment>
+          {/* <BrowserRouter>
+          <Switch> */}
+            {/* <Route
               exact path="/"
               render={props => (
                 <RandomQuote {...props}
@@ -111,7 +172,7 @@ class App extends Component {
                 randomQuote={this.randomQuote}
                 />
               )}
-              />
+              /> */}
             {/* <Route
               exact path="/ancient"
               render={props => (
@@ -152,8 +213,8 @@ class App extends Component {
                   />
                 }}
               /> */}
-            </Switch>
-            </BrowserRouter>
+            {/* </Switch>
+            </BrowserRouter> */}
             </div>
             </div>
           <div className="categories">
