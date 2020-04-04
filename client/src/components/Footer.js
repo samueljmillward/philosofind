@@ -13,7 +13,7 @@ const FooterPage = () => {
             <h5 className="title">About Us</h5>
             <p>
               Philosofind was created by Sam Millward, Sean Campbell
-              & James Barrington. They are all graduates of the Manchester
+              & James Barrington. They are all graduates of Manchester
               Codes.
             </p>
             <p>Manchester Codes is the UK’s original part-time coding school.</p>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import Google from '../images/Google_Books.png';
+import '../styles/BookStyle.css';
 
 const Books = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -35,12 +37,15 @@ const Books = () => {
 
   return (
     <section>
+      <div>
+        <img src={Google} alt="" height="117px" width="340px" ></img>
+      </div>
+      <br></br>
       <form onSubmit={onSubmitHandler}>
         <label>
-          <span>Search for books</span>
           <input
             type="search"
-            placeholder="microservice, restful design, etc.,"
+            placeholder="Search for Books"
             value={searchTerm}
             onChange={onInputChange}
           />

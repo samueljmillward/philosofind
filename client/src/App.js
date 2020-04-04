@@ -11,13 +11,13 @@ import RandomQuote from './components/RandomQuote'
 // import ModernQuote from './components/ModernQuote';
 // import ArtistQuote from './components/ArtistQuote';
 // import EntrepreneurQuote from './components/EntrepreneurQuote';
-// import ScienceQuote from './components/ScienceQuote';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Categories from './components/Categories';
 import Wikipedia from './components/Wikipedia';
 import Button from './components/Button';
 import Background from './images/ancient8.jpg';
+import Books from './components/Books';
 // import Philosofind from './components/Philosofind';
 import Axios from 'axios';
 
@@ -157,7 +157,7 @@ viewAllQuotes() {
                     {/* <QuoteMachine selectedQuote={this.selectedQuote} assignNewQuoteIndex={this.assignNewQuoteIndex} /> */}
                 </div>
                 <div className="random-button">
-                  <Button buttonDisplayName="Next Quote" clickHandler={this.assignNewQuoteIndex}/>
+                  <Button buttonDisplayName="Philosofind" clickHandler={this.assignNewQuoteIndex}/>
                 </div>
               </div>
             </MDBBox>
@@ -222,6 +222,9 @@ viewAllQuotes() {
           </div>
           <div className="wikipedia">
             <Wikipedia />
+          </div>
+          <div className="booksearch">
+            <Books />
           </div>
           <div className="footer">
             <Footer />
