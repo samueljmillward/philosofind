@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://jimmyb2508.github.io/Philosofind_v.1.0/",
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
