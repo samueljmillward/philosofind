@@ -26,5 +26,8 @@
     "react-background-slideshow": "^1.0.4",
     "react-slideshow-image": "^1.4.0",
     "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "minimist": "^1.2.5"
   }
 }
