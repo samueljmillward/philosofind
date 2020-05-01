@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3000",
   "homepage": "https://jimmyb2508.github.io/Philosofind_v.1.0/",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "emailjs-com": "^2.4.1",
     "enzyme-adapter-react-15": "^1.4.1",
     "gh-pages": "^2.2.0",
     "lodash": "^4.17.15",
@@ -28,8 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

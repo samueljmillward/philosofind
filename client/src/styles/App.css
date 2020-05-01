@@ -22,11 +22,74 @@
   min-height: 100vh;
 }
 
-.Main {
-  margin-top: 100px;
+.randomquote {
+  padding-top: 400px;
+  color: #ffffff;
+  position: relative;
 }
 
-.random-quote {
+.quotebutton {
+  color: black;
+  height: 50px;
+  position: absolute;
+  top: 700px;
+  width: 100px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Enlightenment Background */
+/* BEGINS */
+
+.enlightenmentcontainer {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-position: calc(5%) calc(5%); 
+}
+
+/* Enlightenment Background */
+/* ENDS */
+
+/* Artist Background */
+/* BEGINS */
+
+.artistscontainer {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 1100px) {
+
+.artistscontainer {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: calc(20%) calc(20%); 
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  }
+}
+
+/* Artist Background */
+/* ENDS */
+
+/* .Main {
+  margin-top: 100px;
+} */
+
+/* .random-quote {
   color: #fff;
   font-size: xx-large;
   font-weight: bolder;
@@ -35,9 +98,9 @@
   display: flex;
   flex-direction: column;
   max-width: 80%;
-}
+} */
 
-.random-button {
+/* .random-button {
   margin-top: 650px;
   color: #fff;
   font-size: medium;
@@ -46,7 +109,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .categories {
   position: relative;

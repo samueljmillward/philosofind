@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import Contact from './Contact';
+import ContactUs from './Email';
 import MCRCodes from '../images/MCR_Codes.png';
 import '../styles/Footer.css';
 
@@ -36,7 +37,7 @@ const FooterPage = () => {
           </MDBCol>
           <MDBCol md="4">
             <h5 className="title">Contact Us</h5>
-              <Contact />
+              <ContactUs />
           </MDBCol>
         </MDBRow>
       </MDBContainer>
