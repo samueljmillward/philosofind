@@ -1,61 +1,49 @@
 import React, { Component } from 'react';
-import { random } from 'lodash';
+import Axios from 'axios';
 import Button from './Button';
 
 import '../styles/App.css';
 
 class ScientistsQuote extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      quotes: [],
-      selectedQuoteIndex: null,
+      quote: '',
+      author: ''
     }
-    this.assignNewQuoteIndex = this.assignNewQuoteIndex.bind(this);
-    this.selectQuoteIndex = this.generateNewQuoteIndex.bind(this);
   }
 
   componentDidMount() {
-    fetch('https://murmuring-depths-99830.herokuapp.com/quotes/scientists')
-      .then(data => data.json())
-      .then(quotes => this.setState({ quotes }, this.assignNewQuoteIndex));
+    this.getQuote()
   }
 
-  get selectedQuote() {
-    if (!this.state.quotes.length || !Number.isInteger(this.state.selectedQuoteIndex)) {
-      return undefined;
-    }
-    return this.state.quotes[this.state.selectedQuoteIndex];
+  getQuote() {
+    let url = 'https://murmuring-depths-99830.herokuapp.com/quotes/scientists/random'
+
+    Axios.get(url)
+      .then(res => {
+        let randomQuote = res.data;
+
+        this.setState({
+          quote: randomQuote['quote'],
+          author: randomQuote['author']
+        })
+      })
   }
 
-  /* Returns an integer representing an index in state.quotes*/
-  /* If state.quotes is empty then it returns undefined */
-
-  generateNewQuoteIndex() {
-    if (!this.state.quotes.length) {
-      return undefined;
-    }
-    return random(0, this.state.quotes.length -1);
+  getNewQuote = () => {
+    this.getQuote()
   }
 
-assignNewQuoteIndex() {
-  this.setState({ selectedQuoteIndex: this.generateNewQuoteIndex() });
-}
-
-viewAllQuotes() {
-  this.setState({ });
-}
-
-render () {
-  return (
-    <React.Fragment>
-    <div>
-      <div>
-        <h1 className="randomquote">{this.selectedQuote ? `"${this.selectedQuote.quote}" - ${this.selectedQuote.author}` : 'Quote Not Shown!' }</h1>
+render() {
+  const { quote, author } = this.state
+  return(
+      <div id="wrapper">
+        <div>
+          <h1 className="randomquote">{quote} - {author}</h1>
+        </div>
+          <Button buttonDisplayName="New Quote" clickHandler={this.getNewQuote} />
       </div>
-          <Button buttonDisplayName="Philosofind" clickHandler={this.assignNewQuoteIndex} />
-    </div>
-    </React.Fragment>
     )
   }
 }
