@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap');
+
+h1 {
+  padding-top:130px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+.api-info {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.api-routes {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.json, .all-quotes, .philosofind, .category-quotes, .category-random-quotes {
+  padding-bottom: 40px;
+}
+
+.json-code-snippet {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 400px;
+  overflow: auto;
+  padding: 0.5em;
+  display: block;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.code-snippet {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 500px;
+  overflow: auto;
+  padding: 0.5em;
+  display: block;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.category-code-snippet {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 600px;
+  overflow: auto;
+  padding: 0.5em;
+  display: block;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.category-random-code-snippet {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 700px;
+  overflow: auto;
+  padding: 0.5em;
+  display: block;
+  word-wrap: break-word;
+  display: inline-block;
+}

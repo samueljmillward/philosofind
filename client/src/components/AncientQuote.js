@@ -16,7 +16,7 @@ class AncientQuote extends Component {
   }
 
   componentDidMount() {
-    fetch('https://murmuring-depths-99830.herokuapp.com/quotes')
+    fetch('https://murmuring-depths-99830.herokuapp.com/quotes/ancient')
       .then(data => data.json())
       .then(quotes => this.setState({ quotes }, this.assignNewQuoteIndex));
   }

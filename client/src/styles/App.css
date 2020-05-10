@@ -23,7 +23,9 @@
 }
 
 .randomquote {
-  padding-top: 400px;
+  padding-top: 350px;
+  padding-left: 50px;
+  padding-right: 50px;
   color: #ffffff;
   position: relative;
 }
@@ -32,7 +34,7 @@
   color: black;
   height: 50px;
   position: absolute;
-  top: 700px;
+  top: 800px;
   width: 100px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);

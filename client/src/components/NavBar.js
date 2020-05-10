@@ -39,7 +39,7 @@ render() {
           <MDBNavbarNav left>
             <MDBNavItem>
               <MDBDropdown>
-                <MDBDropdownToggle nav caret>
+                <MDBDropdownToggle className="white" nav caret>
                   <span className="mr-2">Categories</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
@@ -53,9 +53,9 @@ render() {
               </MDBDropdown>
             </MDBNavItem>
           </MDBNavbarNav>
-          <MDBNavbarNav right>
+          <MDBNavbarNav className="white" right>
             <MDBNavItem>
-                <MDBNavLink to="#!">API</MDBNavLink>
+                <MDBNavLink to="/API">API</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
