@@ -11,7 +11,6 @@ MDBDropdown,
 MDBDropdownToggle,
 MDBDropdownMenu,
 MDBDropdownItem,
-MDBFormInline
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import Logo from '../images/logo.png';

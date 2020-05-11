@@ -1,5 +1,4 @@
 import React from 'react'
-import Background from '../images/ancientBG.jpg';
 
 import '../styles/API.css';
 
