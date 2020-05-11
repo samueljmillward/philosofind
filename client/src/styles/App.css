@@ -31,7 +31,30 @@
   color: #ffffff;
   position: relative;
   font-family: 'Cinzel', serif;
+  margin-top: 350px;
+  background-color: rgba(255, 255, 255, 0.75);;
+  color: black; 
+  padding: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .randomquote {
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ffffff;
+    position: relative;
+    font-family: 'Cinzel', serif;
+    margin-top: 250px;
+    background-color: rgba(255, 255, 255, 0.75);;
+    color: black; 
+    padding: 0.5rem;
+    
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+}
+
 
 .quotebutton {
   color: black;
