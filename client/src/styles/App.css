@@ -37,25 +37,6 @@
   padding: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .randomquote {
-    padding-top: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: #ffffff;
-    position: relative;
-    font-family: 'Cinzel', serif;
-    margin-top: 250px;
-    background-color: rgba(255, 255, 255, 0.75);;
-    color: black; 
-    padding: 0.5rem;
-    
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-  }
-}
-
-
 .quotebutton {
   color: black;
   height: 50px;
@@ -65,6 +46,46 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .randomcontainer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .randomquote {
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ffffff;
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.75);;
+    color: black; 
+    padding: 0.5rem;
+    
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .quotebutton {
+    color: black;
+    height: 50px;
+    position: absolute;
+    top: 600px;
+    width: 100px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Enlightenment Background */
@@ -109,35 +130,6 @@
   min-height: 100vh;
   }
 }
-
-/* Artist Background */
-/* ENDS */
-
-/* .Main {
-  margin-top: 100px;
-} */
-
-/* .random-quote {
-  color: #fff;
-  font-size: xx-large;
-  font-weight: bolder;
-  position: relative;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-} */
-
-/* .random-button {
-  margin-top: 650px;
-  color: #fff;
-  font-size: medium;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-} */
 
 .categories {
   position: relative;
