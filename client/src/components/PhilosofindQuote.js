@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import Button from './Button';
+import TwitterShare from './TwitterShare';
 
 import '../styles/App.css';
 
@@ -42,7 +43,10 @@ render() {
         <div>
           <h1 className="randomquote">{quote} - {author}</h1>
         </div>
+        <div className="buttons">
           <Button buttonDisplayName="Philosofind" clickHandler={this.getNewQuote} />
+          <TwitterShare quote={quote} author={author}/>
+        </div>
       </div>
     )
   }
