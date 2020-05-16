@@ -4,7 +4,6 @@ import {
   Route 
 } from "react-router-dom";
 import { MDBBox } from 'mdbreact';
-import './styles/App.css';
 import NavBar from './components/NavBar';
 import PhilosofindBox from './components/PhilosofindBox';
 import AncientBox from './components/AncientBox';
@@ -18,6 +17,8 @@ import Categories from './components/Categories';
 import Wikipedia from './components/Wikipedia';
 import Books from './components/Books';
 import Footer from './components/Footer';
+
+import './styles/App.css';
 
 class App extends Component {
   render() {
@@ -55,7 +56,7 @@ class App extends Component {
               <Route exact path="/scientists">
                 <ScientistsBox />
               </Route>
-              <Route path="/API">
+              <Route exact path="/api">
                 <APIBox />
               </Route>
             </Router>

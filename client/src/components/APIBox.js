@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../styles/API.css';
 
-const AncientBox = () => {
+const APIBox = () => {
     return (
       <React.Fragment>
         <div className="api-container">
@@ -67,8 +67,7 @@ const AncientBox = () => {
           </div>
         </div>
       </React.Fragment>
-
     )
   }
 
-export default AncientBox;
+export default APIBox;

@@ -6,7 +6,6 @@ MDBNavbarToggler,
 MDBCollapse, 
 MDBNavbarNav,
 MDBNavItem,
-MDBNavLink,
 MDBDropdown,
 MDBDropdownToggle,
 MDBDropdownMenu,
@@ -35,7 +34,7 @@ render() {
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <MDBNavbarNav left>
+          <MDBNavbarNav right>
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle className="white" nav caret>
@@ -48,13 +47,9 @@ render() {
                   <MDBDropdownItem href="/artists">Aritsts</MDBDropdownItem>
                   <MDBDropdownItem href="/entrepreneurs">Entrepreneurs</MDBDropdownItem>
                   <MDBDropdownItem href="/scientists">Scientists</MDBDropdownItem>
+                  <MDBDropdownItem href="/api">API</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
-            </MDBNavItem>
-          </MDBNavbarNav>
-          <MDBNavbarNav className="white" right>
-            <MDBNavItem>
-                <MDBNavLink to="/API">API</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
