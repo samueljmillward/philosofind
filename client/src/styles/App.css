@@ -41,11 +41,15 @@
   color: black;
   height: 50px;
   position: absolute;
-  top: 800px;
+  top: 770px;
   width: 100px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.button {
+  position: relative;
 }
 
 @media only screen and (max-width: 600px) {

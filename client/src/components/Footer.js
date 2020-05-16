@@ -42,7 +42,7 @@ const FooterPage = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> philosofind.com </a>
+          &copy; {new Date().getFullYear()} Copyright: philosofind.co.uk <br></br>All Logo's by<a href="http://www.pjrenniedesign.co.uk/"> © PJ Rennie Design</a>
         </MDBContainer>
       </div>
     </MDBFooter>
