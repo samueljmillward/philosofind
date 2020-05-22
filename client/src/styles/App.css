@@ -37,13 +37,10 @@
 
 .quotebutton {
   color: black;
-  height: 50px;
-  position: absolute;
-  top: 770px;
-  width: 100px;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .button {
@@ -63,30 +60,18 @@
   }
 
   .randomquote {
-    padding-top: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: #ffffff;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Cinzel', serif;
-    font-size: 26px;
-    margin-top: 150px;
+    font-size: 1.6rem;
     background-color: rgba(255, 255, 255, 0.75);;
     color: black; 
-    padding: 0.5rem;
-    
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
   }
 
   .quotebutton {
     color: black;
-    height: 50px;
-    position: absolute;
-    top: 500px;
-    width: 130px;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    position: relative;
   }
 }
 
