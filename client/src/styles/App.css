@@ -21,17 +21,15 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .randomquote {
-  padding-top: 350px;
-  padding-left: 50px;
-  padding-right: 50px;
-  color: #ffffff;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Cinzel', serif;
-  margin-top: 350px;
+  margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.75);;
   color: black; 
   padding: 0.5rem;
@@ -59,6 +57,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-attachment: scroll
   }
