@@ -2,17 +2,18 @@ import React from 'react'
 import Background from '../images/artistsBG.jpg';
 import ArtistsQuote from './ArtistsQuote';
 
-import '../styles/App.css';
+import '../styles/sass/layout/_categories.scss';
 
 const ArtistsBox = () => {
-    return (
-      <div
-        className="artistscontainer"
-        style={{ 
-        backgroundImage: `url(${Background})`}}>
-        <ArtistsQuote className="ArtistsQuote" />
-      </div>
-    )
-  }
+  return (
+    <div
+      className="artistscontainer"
+      style={{
+        backgroundImage: `url(${Background})`
+      }}>
+      <ArtistsQuote className="ArtistsQuote" />
+    </div>
+  )
+}
 
 export default ArtistsBox;

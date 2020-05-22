@@ -3,7 +3,7 @@ import Axios from 'axios';
 import Button from './Button';
 import TwitterShare from './TwitterShare';
 
-import '../styles/App.css';
+import '../styles/sass/layout/_categories.scss';
 
 class EnlightenmentQuote extends Component {
   constructor(props) {
@@ -36,16 +36,16 @@ class EnlightenmentQuote extends Component {
     this.getQuote()
   }
 
-render() {
-  const { quote, author } = this.state
-  return(
+  render() {
+    const { quote, author } = this.state
+    return (
       <div id="wrapper">
         <div>
           <h1 className="randomquote">{quote} - {author}</h1>
         </div>
         <div className="buttons">
           <Button buttonDisplayName="New Quote" clickHandler={this.getNewQuote} />
-          <TwitterShare quote={quote} author={author}/>
+          <TwitterShare quote={quote} author={author} />
         </div>
       </div>
     )

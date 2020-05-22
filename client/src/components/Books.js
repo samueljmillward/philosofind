@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Google from '../images/Google_Books.png';
-import '../styles/BookStyle.css';
+import '../styles/sass/layout/_google.scss';
 
 const Books = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -60,7 +60,7 @@ const Books = () => {
                   alt={`${book.volumeInfo.title} book`}
                   src={`http://books.google.com/books/content?id=${
                     book.id
-                  }&printsec=frontcover&img=1&zoom=1&source=gbs_api`}
+                    }&printsec=frontcover&img=1&zoom=1&source=gbs_api`}
                 />
                 <div>
                   <h3>{book.volumeInfo.title}</h3>

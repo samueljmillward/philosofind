@@ -2,7 +2,7 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import ContactUs from './Email';
 import MCRCodes from '../images/MCR_Codes.png';
-import '../styles/Footer.css';
+import '../styles/sass/layout/_footer.scss';
 
 const FooterPage = () => {
   return (
@@ -26,7 +26,7 @@ const FooterPage = () => {
           <MDBCol md="4">
             <h5 className="title">Philosofind</h5>
             <p>
-              Philosofind is a single page application designed to help you make sense of the world around you. 
+              Philosofind is a single page application designed to help you make sense of the world around you.
             </p>
             <p>
               Life can be stressful, confusing and painful at times but it doesn't always need to be that way.
@@ -36,7 +36,7 @@ const FooterPage = () => {
           </MDBCol>
           <MDBCol md="4">
             <h5 className="title">Contact Us</h5>
-              <ContactUs />
+            <ContactUs />
           </MDBCol>
         </MDBRow>
       </MDBContainer>

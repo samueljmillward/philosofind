@@ -1,6 +1,9 @@
 import React from 'react';
 import Wiki from '../images/Wiki.png';
 
+import '../styles/sass/layout/_wikipedia.scss';
+
+
 class Wikipedia extends React.Component {
   constructor(props) {
     super(props);
@@ -94,18 +97,18 @@ class Wikipedia extends React.Component {
         <div className="searchResultDiv" key={key3}>
           <h3><a href={this.state.wikiSearchReturnValues[key3].queryResultPageFullURL}>{this.state.wikiSearchReturnValues[key3].queryResultPageTitle}</a></h3>
           <span className='link'><a href={this.state.wikiSearchReturnValues[key3].queryResultPageFullURL}>{this.state.wikiSearchReturnValues[key3].queryResultPageFullURL}</a></span>
-          <p className="description" dangerouslySetInnerHTML={{__html: this.state.wikiSearchReturnValues[key3].queryResultPageSnippet}}></p>
+          <p className="description" dangerouslySetInnerHTML={{ __html: this.state.wikiSearchReturnValues[key3].queryResultPageSnippet }}></p>
         </div>
       );
     }
 
     return (
       <div className="Wikipedia">
-            <form action="" className="wikisearch">
-              <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="25" />
-              <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
-            </form>
-          {wikiSearchResults}
+        <form action="" className="wikisearch">
+          <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="25" />
+          <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
+        </form>
+        {wikiSearchResults}
         <img src={Wiki} alt="wikipedia-logo" height="250px" width="200px" ></img>
       </div>
     );

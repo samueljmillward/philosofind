@@ -1,0 +1,42 @@
+.enlightenmentcontainer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-position: calc(5%) calc(5%); 
+  }
+
+.artistscontainer {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 1100px) {
+
+.artistscontainer {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: calc(20%) calc(20%); 
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  }
+}
+
+.categories {
+  position: relative;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: 2px solid #fff;
+  color: black;
+  text-align: center;
+}

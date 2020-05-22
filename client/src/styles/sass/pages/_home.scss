@@ -1,0 +1,60 @@
+.randomcontainer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 95vh;
+  }
+  
+  .randomquote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.75);;
+    color: black; 
+    padding: 0.5rem;
+  }
+  
+  .quotebutton {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .button {
+    position: relative;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .randomcontainer {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-attachment: scroll
+    }
+  
+    .random-quote {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      background-color: rgba(255, 255, 255, 0.75);;
+      color: black; 
+    }
+  
+    .quotebutton {
+      color: black;
+      position: relative;
+    }
+  }
