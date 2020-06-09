@@ -5,7 +5,9 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    min-height: 95vh;
+    min-height: 110vh;
+
+    clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100vh);
   }
   
   .randomquote {
@@ -13,9 +15,12 @@
     justify-content: center;
     align-items: center;
     font-family: 'Cinzel', serif;
-    margin-top: 200px;
-    background-color: rgba(255, 255, 255, 0.75);;
-    color: black; 
+    margin-top: 15rem;
+    border-radius: 10px;
+    // background-color: rgba(255, 255, 255, 0.75);;
+    // color: black; 
+    background-color: rgba(0, 0, 0, .091);
+    color:#fff;
     padding: 0.5rem;
   }
   
@@ -30,25 +35,14 @@
     align-items: center;
   }
   
-  @media only screen and (max-width: 600px) {
-    .randomcontainer {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-attachment: scroll
-    }
+  // @media only screen and (max-width: 600px) {
+  //   .randomcontainer {
+  //     align-items: center;
+  //     min-height: 100vh;
+  //     background-attachment: scroll
+  //   }
   
-    .random-quote {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Cinzel', serif;
-      font-size: 1.6rem;
-      background-color: rgba(255, 255, 255, 0.75);;
-      color: black; 
-    }
-  }
+  //   .random-quote {
+  //     font-size: 1.6rem;
+  //   }
+  // }
