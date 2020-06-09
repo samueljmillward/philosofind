@@ -1,5 +1,5 @@
 import React from 'react'
-import Background from '../images/enlightenmentBG.jpg';
+import Background from '../images/philosofindBG.jpg';
 import EnlightenmentQuote from './EnlightenmentQuote';
 
 import '../styles/sass/layout/_categories.scss';

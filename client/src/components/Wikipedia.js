@@ -1,5 +1,6 @@
 import React from 'react';
 import Wiki from '../images/Wiki.png';
+import Background from '../images/entrepreneurBG.jpg';
 
 import '../styles/sass/layout/_wikipedia.scss';
 
@@ -103,7 +104,7 @@ class Wikipedia extends React.Component {
     }
 
     return (
-      <div className="wikipedia">
+      <div className="wikipedia" style={{ backgroundImage: `url(${Background})` }}>
         <form action="" className="wikipedia__wikisearch">
           <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="25" />
           <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
