@@ -1,0 +1,33 @@
+.quotebtn,
+.quotebtn:visited {
+    color: black;
+    height: 100%;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #fff;
+    padding: 15px 40px;
+    border-radius: 500px;
+    transition: all .3s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.quotebtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+}
+
+.quotebtn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.quotebtn:focus {
+    outline:0;
+}

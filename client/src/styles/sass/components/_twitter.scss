@@ -1,8 +1,10 @@
-i {
-    color:#ffffff;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+.twitter {
+  &__share {
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
   }
+}
+
+
   
