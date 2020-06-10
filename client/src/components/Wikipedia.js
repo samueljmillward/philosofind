@@ -3,7 +3,7 @@ import Wiki from '../images/Wiki.png';
 import Background from '../images/entrepreneurBG.jpg';
 
 import '../styles/sass/layout/_wikipedia.scss';
-
+import '../styles/sass/components/_button.scss';
 
 class Wikipedia extends React.Component {
   constructor(props) {
@@ -90,8 +90,7 @@ class Wikipedia extends React.Component {
   }
 
   render() {
-    let wikiSearchResults = [];
-    // console.log(this.state.wikiSearchReturnValues);
+    let wikiSearchResults = [''];
 
     for (var key3 in this.state.wikiSearchReturnValues) {
       wikiSearchResults.push(
@@ -107,7 +106,7 @@ class Wikipedia extends React.Component {
       <div className="wikipedia" style={{ backgroundImage: `url(${Background})` }}>
         <form action="" className="wikipedia__wikisearch">
           <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="25" />
-          <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
+          <button className="searchbtn" type='submit' onClick={this.useWikiSearchEngine}>Search</button>
         </form>
         {wikiSearchResults}
         <img src={Wiki} alt="wikipedia-logo" height="250px" width="200px" ></img>

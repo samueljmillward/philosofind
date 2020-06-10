@@ -31,3 +31,38 @@
 .quotebtn:focus {
     outline:0;
 }
+
+.searchbtn,
+.searchbtn:visited {
+    color: black;
+    height: 100%;
+    margin-left: .4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    background-color: #fff;
+    padding: .23rem 2rem;
+    border-radius: 500px;
+    transition: all .3s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.searchbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.searchbtn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.searchbtn:focus {
+    outline: 0;
+}
+

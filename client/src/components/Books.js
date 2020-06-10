@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Google from '../images/Google_Books.png';
+
 import '../styles/sass/layout/_google.scss';
+import '../styles/sass/components/_button.scss';
+
 
 const Books = () => {
   const [searchTerm, setSearchTerm] = useState("");
