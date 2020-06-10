@@ -1,10 +1,15 @@
 .categories {
   position: relative;
-  padding-top: 1.5rem;
+  padding-top: 0;
   padding-bottom: 1.5rem;
   border: 2px solid #fff;
   color: black;
   text-align: center;
+
+  &__title {
+    float:left;
+    transform: translateY(-1rem);
+  }
 }
 
 .grid-categories {
