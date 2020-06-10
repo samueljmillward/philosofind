@@ -7,7 +7,7 @@ import '../styles/sass/layout/_categories.scss';
 const ArtistsBox = () => {
   return (
     <div
-      className="artistscontainer"
+      className="randomcontainer"
       style={{
         backgroundImage: `url(${Background})`
       }}>

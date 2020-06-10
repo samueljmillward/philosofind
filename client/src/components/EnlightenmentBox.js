@@ -7,7 +7,7 @@ import '../styles/sass/layout/_categories.scss';
 const EnlightenmentBox = () => {
   return (
     <div
-      className="enlightenmentcontainer"
+      className="randomcontainer"
       style={{
         backgroundImage: `url(${Background})`
       }}>
