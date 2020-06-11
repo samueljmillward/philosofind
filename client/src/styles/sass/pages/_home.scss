@@ -6,8 +6,11 @@
     display: flex;
     justify-content: center;
     min-height: 110vh;
-
     clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100vh);
+
+    @media only screen and (max-width: 510px) {
+      clip-path: none;
+    }
   }
   
   .randomquote {

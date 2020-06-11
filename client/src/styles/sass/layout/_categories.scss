@@ -5,6 +5,7 @@
   border: 2px solid #fff;
   color: black;
   text-align: center;
+  object-fit: cover;
 
   &__title {
     float:left;
@@ -16,8 +17,8 @@
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
 
   .ancient { 
     grid-area: 1 / 1 / 2 / 2; 
@@ -37,19 +38,14 @@
   .scientists { 
     grid-area: 2 / 3 / 3 / 4; 
   }
+}
 
-  // &__container {
-
-  // }
-
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 830px) {
     .grid-categories {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-      }
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+    }
       
     .ancient { 
       grid-area: 1 / 1 / 2 / 2; 
@@ -70,4 +66,3 @@
       grid-area: 3 / 2 / 4 / 3; 
     }
   }  
-}
