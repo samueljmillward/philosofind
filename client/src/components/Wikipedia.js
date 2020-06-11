@@ -105,7 +105,7 @@ class Wikipedia extends React.Component {
     return (
       <div className="wikipedia" style={{ backgroundImage: `url(${Background})` }}>
         <form action="" className="wikipedia__wikisearch">
-          <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="25" />
+          <input className="" type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Search Wikipedia Articles' size="20" />
           <button className="searchbtn" type='submit' onClick={this.useWikiSearchEngine}>Search</button>
         </form>
         {wikiSearchResults}

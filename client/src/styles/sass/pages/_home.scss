@@ -17,18 +17,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
     font-family: 'Cinzel', serif;
     margin-top: 15rem;
     border-radius: 10px;
-    max-width: 90vw;
+    max-width: 85vw;
     width: 55rem;
-    // background-color: rgba(255, 255, 255, 0.75);;
-    // color: black; 
     background-color: rgba(0, 0, 0, .091);
     color:#fff;
-    padding: 0.5rem;
+    padding: 0.5rem; 
 
-    &__author{
+    @media only screen and (max-width: 900px) {
+      font-size: 1.8rem;
+    }
+    
+
+    &__author {
       margin-top: 0;
       color: #fff;
       float: right;
